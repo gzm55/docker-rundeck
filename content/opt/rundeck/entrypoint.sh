@@ -14,7 +14,7 @@ elif [ -r /etc/rundeck/profile ]; then
 fi
 
 # Check basic permission
-if [ -z "${RDECK_BASE}" || ! -r "$RDECK_BASE"/rundeck-launcher-*.jar ]; then
+if [ -z "${RDECK_BASE}" -o ! -r "$RDECK_BASE"/rundeck-launcher-*.jar ]; then
   echo "Unable to determine RDECK_BASE." 1>&2
   exit 1
 fi
