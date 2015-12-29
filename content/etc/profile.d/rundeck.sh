@@ -1,1 +1,1 @@
-test -r /opt/rundeck/etc/profile && source /opt/rundeck/etc/profile >/dev/null
+export RDECK_BASE=/opt/rundeck
