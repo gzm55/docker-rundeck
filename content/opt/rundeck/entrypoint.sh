@@ -44,6 +44,6 @@ if [ -r "$RDECK_BASE"/etc/framework.properties ]; then
 fi
 
 # java 8 fix
-RDECK_OPTS=$(echo "$RDECK_OPTS" | sed 's/-XX:MaxPermSize=[^ ]*//g')
+RDECK_JVM=$(echo "$RDECK_JVM" | sed 's/-XX:MaxPermSize=[^ ]*//g')
 
 exec java $RDECK_JVM $RDECK_OPTS -jar "$RDECK_BASE"/rundeck-launcher-*.jar
