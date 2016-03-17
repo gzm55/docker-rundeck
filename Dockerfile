@@ -1,7 +1,7 @@
 FROM jeanblanchard/java:jdk-8
 
 # Download
-ADD http://dl.bintray.com/rundeck/rundeck-maven/rundeck-launcher-2.6.2.jar /opt/rundeck/
+ADD http://dl.bintray.com/rundeck/rundeck-maven/rundeck-launcher-2.6.4.jar /opt/rundeck/
 COPY content /
 
 VOLUME ["/opt/rundeck/etc", \
